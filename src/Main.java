@@ -40,6 +40,24 @@ public class Main {
         int deliveryDistance = 20;
         System.out.println("Для доставки потребуется дней " + deliveryDistance / 20);
 
+        //Задача №5
+        System.out.println("Задача №5");
+        int monthNumber = 11;
+        if (monthNumber <= 2 || monthNumber == 12) {
+            System.out.println("Месяц под номером " + monthNumber + " принадлежит к зимнему сезону");
+        }
+        else if (monthNumber >= 3 && monthNumber <= 5) {
+            System.out.println("Месяц под номером " + monthNumber + " принадлежит к весеннему сезону");
+        }
+        else if (monthNumber >= 6 && monthNumber <= 8) {
+            System.out.println("Месяц по номерм " + monthNumber + " принадлежит к летнему сезону");
+        }
+        else if (monthNumber >=9 && monthNumber <= 11) {
+            System.out.println("Месяц по номерм " + monthNumber + " принадлежит к осеннему сезону");
+        } else {
+            System.out.println("Данного месяца не существует");
+        }
+
 
 
 
