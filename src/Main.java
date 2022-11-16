@@ -37,26 +37,46 @@ public class Main {
 
         //Задача №4
         System.out.println("Задача №4");
-        int deliveryDistance = 20;
-        System.out.println("Для доставки потребуется дней " + deliveryDistance / 20);
+        int deliveryDistance = 90;
+        int deliveryDays = 1;
+        if (deliveryDistance > 20) {
+            deliveryDays ++;
+        }
+        if (deliveryDistance > 60) {
+            deliveryDays ++;
+        }
+        System.out.println("Для доставки потребуется дней: " + deliveryDays);
+
 
         //Задача №5
         System.out.println("Задача №5");
-        int monthNumber = 11;
-        if (monthNumber <= 2 || monthNumber == 12) {
-            System.out.println("Месяц под номером " + monthNumber + " принадлежит к зимнему сезону");
+        int monthNumberS = 7;
+        switch (monthNumberS){
+            case 1:
+            case 2:
+            case 12:
+                System.out.println("Месяц под номером " + monthNumberS + " принадлежит к зимнему сезону");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Месяц под номером " + monthNumberS + " принадлежит к весеннему сезону");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Месяц под номером " + monthNumberS + " принадлежит к летнему сезону");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Месяц под номером " + monthNumberS + " принадлежит к осеннему сезону");
+                break;
+            default:
+                System.out.println("Такого месяца не существует");
+
         }
-        else if (monthNumber >= 3 && monthNumber <= 5) {
-            System.out.println("Месяц под номером " + monthNumber + " принадлежит к весеннему сезону");
-        }
-        else if (monthNumber >= 6 && monthNumber <= 8) {
-            System.out.println("Месяц по номерм " + monthNumber + " принадлежит к летнему сезону");
-        }
-        else if (monthNumber >=9 && monthNumber <= 11) {
-            System.out.println("Месяц по номерм " + monthNumber + " принадлежит к осеннему сезону");
-        } else {
-            System.out.println("Данного месяца не существует");
-        }
+
 
 
 
